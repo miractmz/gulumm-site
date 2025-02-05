@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Gülüm İçin</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <audio autoplay loop>
+        <source src="intihaşk.mp3" type="audio/mpeg">
+    </audio>
+    
+    <div class="container">
+        <h1>Gülüm, Seni Çok Seviyorum</h1>
+        <p>Beni sana çeken şey neydi bilmiyorum… Ama bu fotoğrafı ilk gördüğüm an, bir şeylerin değişeceğini hissetmiştim.</p>
+        
+        <div class="slideshow-container">
+            <div class="slide"><img src="images/ilk-gördüğüm.jpg" alt="İlk Gördüğüm Fotoğraf"></div>
+            <div class="slide"><img src="images/bebeklik-yeni.jpg" alt="Bebeklik ve Yeni Hali"></div>
+            <div class="slide"><img src="images/selfie.jpg" alt="Beraber Selfie"></div>
+            <div class="slide"><img src="images/uyurken.jpg" alt="Uyurken"></div>
+            <div class="slide"><img src="images/kardeşiyle.jpg" alt="Defne ve Kardeşi"></div>
+        </div>
+        
+        <p>Yaptığım bütün hatalar için üzgünüm, sevdiğim... Seni çok seviyorum.</p>
+    </div>
+    
+    <script>
+        let slideIndex = 0;
+        function showSlides() {
+            let slides = document.getElementsByClassName("slide");
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            slideIndex++;
+            if (slideIndex > slides.length) {slideIndex = 1}
+            slides[slideIndex - 1].style.display = "block";
+            setTimeout(showSlides, 3000);
+        }
+        showSlides();
+    </script>
+</body>
+</html>

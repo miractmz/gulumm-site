@@ -5,6 +5,30 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Gülüm İçin</title>
     <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background: linear-gradient(to right, #ff758c, #ff7eb3);
+            text-align: center;
+            color: white;
+        }
+        .container {
+            margin: 50px auto;
+            max-width: 600px;
+        }
+        .slideshow-container {
+            position: relative;
+            max-width: 100%;
+        }
+        .slide {
+            display: none;
+        }
+        img {
+            width: 100%;
+            border-radius: 10px;
+            box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
+        }
+    </style>
 </head>
 <body>
     <audio autoplay loop>
@@ -16,11 +40,21 @@
         <p>Beni sana çeken şey neydi bilmiyorum… Ama bu fotoğrafı ilk gördüğüm an, bir şeylerin değişeceğini hissetmiştim.</p>
         
         <div class="slideshow-container">
-            <img src="https://github.com/miractmz/gulumm-site/blob/main/images/ilk-gordugum.jpg?raw=true" alt="İlk Gördüğüm">
-            <img src="https://github.com/miractmz/gulumm-site/blob/main/images/bebeklik-yeni.jpg?raw=true" alt="Bebeklik">
-            <img src="https://github.com/miractmz/gulumm-site/blob/main/images/selfie.jpg?raw=true" alt="Selfie">
-            <img src="https://github.com/miractmz/gulumm-site/blob/main/images/uyurken.jpg?raw=true" alt="Uyurken">
-            <img src="https://github.com/miractmz/gulumm-site/blob/main/images/kardesiyle.jpg?raw=true" alt="Kardeşiyle">
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/miractmz/gulumm-site/main/images/ilk-gordugum.jpg" alt="İlk Gördüğüm Fotoğraf">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/miractmz/gulumm-site/main/images/bebeklik-yeni.jpg" alt="Bebeklik ve Yeni Hali">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/miractmz/gulumm-site/main/images/selfie.jpg" alt="Beraber Selfie">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/miractmz/gulumm-site/main/images/uyurken.jpg" alt="Uyurken">
+            </div>
+            <div class="slide fade">
+                <img src="https://raw.githubusercontent.com/miractmz/gulumm-site/main/images/kardesiyle.jpg" alt="Defne ve Kardeşi">
+            </div>
         </div>
         
         <p>Yaptığım bütün hatalar için üzgünüm, sevdiğim... Seni çok seviyorum.</p>
